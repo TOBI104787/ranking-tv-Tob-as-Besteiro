@@ -1,7 +1,11 @@
 import pandas as pd
 import os
 
-RUTA_CSV = os.path.expanduser("~/Escritorio/csv/tv_accesos_provincias.csv")
+# Carpeta donde está el script
+CARPETA_SCRIPT = os.path.dirname(os.path.abspath(__file__))
+
+# Ruta del CSV relativa al script
+RUTA_CSV = os.path.join(CARPETA_SCRIPT, "tv_accesos_provincias.csv")
 
 def cargar_datos():
     try:
